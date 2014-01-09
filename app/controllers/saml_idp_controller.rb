@@ -5,7 +5,7 @@ class SamlIdpController < SamlIdp::IdpController
   end
 
   def idp_make_saml_response(user)
-    encode_SAMLResponse(:email)
+    encode_SAMLResponse(user[:email])
   end
 
 end
